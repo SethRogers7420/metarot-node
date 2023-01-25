@@ -1,0 +1,9 @@
+{
+  "name": "metarot-api",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.3.1",
+  "main": "index.ts",
+  "dependencies": {
+    "metarot-services": "*"
+  }
+}

@@ -14,12 +14,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "metarot-node",\
         "reference": "workspace:."\
+      },\
+      {\
+        "name": "metarot-api",\
+        "reference": "workspace:packages/api"\
+      },\
+      {\
+        "name": "metarot-services",\
+        "reference": "workspace:packages/services"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["metarot-node", ["workspace:."]]\
+      ["metarot-api", ["workspace:packages/api"]],\
+      ["metarot-node", ["workspace:."]],\
+      ["metarot-services", ["workspace:packages/services"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -9189,6 +9199,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["metarot-api", [\
+        ["workspace:packages/api", {\
+          "packageLocation": "./packages/api/",\
+          "packageDependencies": [\
+            ["metarot-api", "workspace:packages/api"],\
+            ["metarot-services", "workspace:packages/services"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["metarot-node", [\
         ["workspace:.", {\
           "packageLocation": "./",\
@@ -9221,6 +9241,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-node", "virtual:af68e80467b19ac44d557c3227deb37bb2fd26b2e5f51d1380ac550d470a4724a33e70f205c0a4015b8a5c43e4dad445cdea80df893088efdf38a28e72d2027a#npm:10.9.1"],\
             ["tsconfig-paths", "npm:4.1.2"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["metarot-services", [\
+        ["workspace:packages/services", {\
+          "packageLocation": "./packages/services/",\
+          "packageDependencies": [\
+            ["metarot-services", "workspace:packages/services"]\
           ],\
           "linkType": "SOFT"\
         }]\
