@@ -2,5 +2,11 @@
   "name": "metarot-services",
   "version": "1.0.0",
   "packageManager": "yarn@3.3.1",
-  "main": "index.ts"
+  "main": "index.ts",
+  "devDependencies": {
+    "prisma": "^4.9.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.9.0"
+  }
 }

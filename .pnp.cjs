@@ -9213,8 +9213,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/api/",\
           "packageDependencies": [\
             ["metarot-api", "workspace:packages/api"],\
-            ["metarot-services", "workspace:packages/services"],\
-            ["prisma", "npm:4.9.0"]\
+            ["metarot-services", "workspace:packages/services"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -9259,7 +9258,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         ["workspace:packages/services", {\
           "packageLocation": "./packages/services/",\
           "packageDependencies": [\
-            ["metarot-services", "workspace:packages/services"]\
+            ["metarot-services", "workspace:packages/services"],\
+            ["prisma", "npm:4.9.0"]\
           ],\
           "linkType": "SOFT"\
         }]\

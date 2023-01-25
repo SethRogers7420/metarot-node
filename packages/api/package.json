@@ -5,8 +5,5 @@
   "main": "index.ts",
   "dependencies": {
     "metarot-services": "*"
-  },
-  "devDependencies": {
-    "prisma": "^4.9.0"
   }
 }
