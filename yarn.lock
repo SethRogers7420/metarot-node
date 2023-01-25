@@ -2270,6 +2270,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@prisma/engines@npm:4.9.0":
+  version: 4.9.0
+  resolution: "@prisma/engines@npm:4.9.0"
+  checksum: b73306b3e34ebb544f797342cb594f4a73602c6e63961e31e9158f02afdfc209f2cc1d59ae87cbb0165b3dff58eaa145c601ac2a1cfc460e8e439cea8425a3ed
+  languageName: node
+  linkType: hard
+
 "@protobufjs/aspromise@npm:^1.1.1, @protobufjs/aspromise@npm:^1.1.2":
   version: 1.1.2
   resolution: "@protobufjs/aspromise@npm:1.1.2"
@@ -7508,6 +7515,7 @@ __metadata:
   resolution: "metarot-api@workspace:packages/api"
   dependencies:
     metarot-services: "*"
+    prisma: ^4.9.0
   languageName: unknown
   linkType: soft
 
@@ -8826,6 +8834,18 @@ __metadata:
   bin:
     pretty-quick: bin/pretty-quick.js
   checksum: 28bdc32571e6308e049497f58a9245f272275973782b6ed7fbcf98937101cc605a81b3ab48629dba4687b7e86c87a3733febacdc0746ca4da5d1c80a0b88cf45
+  languageName: node
+  linkType: hard
+
+"prisma@npm:^4.9.0":
+  version: 4.9.0
+  resolution: "prisma@npm:4.9.0"
+  dependencies:
+    "@prisma/engines": 4.9.0
+  bin:
+    prisma: build/index.js
+    prisma2: build/index.js
+  checksum: 82f680008a61824a40f3daae9e0e5766f33d28c6641d04e0ee0918c2cb42110579187f3fce2d08ec8baa1124b3115229e9d83d7f64987bf46f6403f56b07e711
   languageName: node
   linkType: hard
 

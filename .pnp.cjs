@@ -3128,6 +3128,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@prisma/engines", [\
+        ["npm:4.9.0", {\
+          "packageLocation": "./.yarn/unplugged/@prisma-engines-npm-4.9.0-dbdcefcf75/node_modules/@prisma/engines/",\
+          "packageDependencies": [\
+            ["@prisma/engines", "npm:4.9.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@protobufjs/aspromise", [\
         ["npm:1.1.2", {\
           "packageLocation": "./.yarn/cache/@protobufjs-aspromise-npm-1.1.2-71d00b938f-011fe7ef08.zip/node_modules/@protobufjs/aspromise/",\
@@ -9204,7 +9213,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/api/",\
           "packageDependencies": [\
             ["metarot-api", "workspace:packages/api"],\
-            ["metarot-services", "workspace:packages/services"]\
+            ["metarot-services", "workspace:packages/services"],\
+            ["prisma", "npm:4.9.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -10659,6 +10669,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/prettier",\
             "prettier"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["prisma", [\
+        ["npm:4.9.0", {\
+          "packageLocation": "./.yarn/unplugged/prisma-npm-4.9.0-1fd992929b/node_modules/prisma/",\
+          "packageDependencies": [\
+            ["prisma", "npm:4.9.0"],\
+            ["@prisma/engines", "npm:4.9.0"]\
           ],\
           "linkType": "HARD"\
         }]\
