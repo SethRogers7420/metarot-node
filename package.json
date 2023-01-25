@@ -9,7 +9,7 @@
     "lint": "eslint . --ext .js,.ts --cache",
     "generate:graphql:watch": "yarn run generate:graphql --watch",
     "generate:graphql": "graphql-codegen --config src/services/graphql/codegen.ts",
-    "prepare": "husky install",
+    "prepare": "husky install && docker-compose up -d",
     "typecheck": "tsc --pretty --noEmit",
     "typecheck:watch": "tsc --pretty --noEmit --watch --preserveWatchOutput",
     "prettier": "prettier --write .",
