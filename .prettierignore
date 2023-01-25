@@ -1,0 +1,6 @@
+dist
+CHANGELOG.md
+.husky
+.vscode
+.idea
+.yarn
